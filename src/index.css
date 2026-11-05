@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-serif: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-display: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    --bg-paper: #F6F4EE;
+    --bg-paper-card: #FFFFFF;
+    --ink-black: #161513;
+    --ink-graphite: #423E3A;
+    --stamp-red: #D83A2A;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--bg-paper);
+    color: var(--ink-black);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Custom scrollbar for clean editorial UI */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D8D2C4;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #A8A08E;
+}
+
+/* Serrated Receipt Tear-Off Zigzag Edges */
+.receipt-serrated-top {
+  position: relative;
+}
+.receipt-serrated-top::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: 0;
+  right: 0;
+  height: 8px;
+  background-size: 16px 8px;
+  background-repeat: repeat-x;
+  background-image: linear-gradient(135deg, white 50%, transparent 50%),
+                    linear-gradient(225deg, white 50%, transparent 50%);
+}
+
+.receipt-serrated-bottom {
+  position: relative;
+}
+.receipt-serrated-bottom::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  right: 0;
+  height: 8px;
+  background-size: 16px 8px;
+  background-repeat: repeat-x;
+  background-image: linear-gradient(45deg, white 50%, transparent 50%),
+                    linear-gradient(315deg, white 50%, transparent 50%);
+}
+
+/* Authentic Cashier Stamp Animation & Texture */
+.stamp-seal {
+  position: relative;
+  border: 1.5px dashed #D83A2A;
+  color: #D83A2A;
+  text-transform: uppercase;
+  font-family: var(--font-mono);
+  letter-spacing: 0.12em;
+  transform: rotate(-1.5deg);
+  background: rgba(216, 58, 42, 0.04);
+}
+
+/* Subtle Architectural Grid Texture */
+.bg-grid-paper {
+  background-size: 24px 24px;
+  background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+}
+

@@ -1,0 +1,6 @@
+{
+  "name": "ChiTiêu AI - Quản Lý Chi Tiêu & Quét Hóa Đơn VietOCR",
+  "description": "Ứng dụng quản lý tài chính thông minh, tích hợp quét hóa đơn bằng VietOCR kết hợp LLM trích xuất JSON và bộ mã nguồn Google Colab fine-tune MC-OCR 2021 tối ưu CER.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
