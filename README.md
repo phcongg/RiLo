@@ -1,7 +1,9 @@
 <div align="center">
 
-  <img src="assets/logo.png" alt="rilo logo" width="300"/>
-
+  <p align="center">
+    <img src="assets/logo.png" alt="rilo logo" width="320"/>
+  </p>
+  
   ### Hệ thống Trích xuất & Xử lý Thông tin Tài liệu Thông minh
   **Fine-tuned PaddleOCR** × **Local Qwen 2.5**
 
